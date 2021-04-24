@@ -1,11 +1,11 @@
 /*Удалить после готовности проекта*/
-div {
-  border: 1px solid red;
-}
+/*div {*/
+/*  border: 1px solid red;*/
+/*}*/
 /*Удалить после готовности проекта*/
-h1 {
-  border: 1px solid red;
-}
+/*h1 {*/
+/*  border: 1px solid red;*/
+/*}*/
 
 .page {
   min-width: 1100px;
@@ -19,13 +19,30 @@ h1 {
 }
 
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   position: relative;
-  display: flex;
+  align-items: center;
+}
+
+/*Текст Научиться учиться*/
+.header__title {
+  position: absolute;
+  margin-left: 64px;
+  width: 730px;
+  color: black;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -65,20 +82,6 @@ h1 {
 .logo_place_footer {
   width: 183px;
   height: 35px;
-}
-
-/*Текст Научиться учиться*/
-.title {
-  position: absolute;
-  margin: auto auto auto 64px;
-  width: 730px;
-  height: 64px;
-  /*display: flex;*/
-  /*justify-content: flex-start;*/
-  color: black;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: bold;
 }
 
 .subtitle {
