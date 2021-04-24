@@ -41,11 +41,14 @@
   z-index: 2;
 }
 
+/*Узнать со стрелкой*/
 .header__link {
-  text-decoration: none
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/*Голубой квадрат*/
 .header__square-pic {
   position: absolute;
   top: 64px;
@@ -53,8 +56,10 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
+  z-index: 0;
 }
 
+/*Картина с мальчиком*/
 .header__main_illustration {
   position: absolute;
   right: 0;
@@ -70,12 +75,12 @@
   height: 32px;
 }
 
-/*Расположение логотипа Яндекс Практикум в шапке*/
+/*Расположение логотипа Яндекс Практикум в header*/
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /*Расположение логотипа Яндекс Практикум в подвале*/
@@ -84,6 +89,7 @@
   height: 35px;
 }
 
+/*Текст внизу*/
 .subtitle {
   position: absolute;
   left: 64px;
@@ -94,6 +100,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 /* и элемента с модификатором вида ключ-значение */
