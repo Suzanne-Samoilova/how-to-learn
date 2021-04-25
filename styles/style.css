@@ -1,20 +1,5 @@
 /*Удалить после готовности проекта*/
-/*div {*/
-/*  border: 1px solid red;*/
-/*}*/
-
-/*Удалить после готовности проекта*/
-/*section {*/
-/*  border: 1px solid red;*/
-/*}*/
-
-/*Удалить после готовности проекта*/
-/*p {*/
-/*  border: 1px solid red;*/
-/*}*/
-
-/*Удалить после готовности проекта*/
-/*h1 {*/
+/*div, h1, h2, section {*/
 /*  border: 1px solid red;*/
 /*}*/
 
@@ -60,7 +45,6 @@
   color: #2f80ed;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /*Голубой квадрат*/
 .header__square-pic {
   position: absolute;
@@ -96,14 +80,8 @@
   z-index: 2;
 }
 
-/*Расположение логотипа Яндекс Практикум в подвале*/
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-}
-
-/*Текст внизу*/
-.subtitle {
+/*Текст внизу header*/
+.header__subtitle {
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -119,7 +97,7 @@
 .description {
   display: flex;
   width: 80%;
-  margin: 100px auto;
+  margin: 100px auto 0;
   background-color: white;
 }
 
@@ -129,7 +107,7 @@
   flex-direction: row;
 }
 
-.two-columns_brief {
+.two-columns__brief {
   width: 175px;
   height: 100%;
   line-height: 1.2;
@@ -139,7 +117,7 @@
   margin-top: 0;
 }
 
-.two-columns_main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   line-height: 34px;
@@ -151,13 +129,74 @@
   justify-content: space-between;
 }
 
-.two-columns_paragraph {
+.two-columns__paragraph {
   padding: 0;
   min-height: 30px;
 }
 
-.two-columns_paragraph_span-accent {
+.two-columns__paragraph_span-accent {
   font-weight: bold;
+}
+
+.digits {
+
+}
+
+/*digits h1*/
+.section-title {
+  width: 60%;
+  margin: 100px auto 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+  color: black;
+}
+
+/*digits h2*/
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+/*Вся таблица digits*/
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+
+}
+
+/*Карточка в таблице digits*/
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+/*Заголовок карточки в таблице digits*/
+.table__heading {
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+/*Текст карточки в таблице digits*/
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  color: black;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -166,4 +205,10 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+/*Расположение логотипа Яндекс Практикум в подвале*/
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
 }
