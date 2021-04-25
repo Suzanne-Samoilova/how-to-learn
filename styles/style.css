@@ -1,12 +1,12 @@
 /*Удалить после готовности проекта*/
-div {
-  border: 1px solid red;
-}
+/*div {*/
+/*  border: 1px solid red;*/
+/*}*/
 
 /*Удалить после готовности проекта*/
-section {
-  border: 1px solid red;
-}
+/*section {*/
+/*  border: 1px solid red;*/
+/*}*/
 
 /*Удалить после готовности проекта*/
 /*p {*/
@@ -14,9 +14,9 @@ section {
 /*}*/
 
 /*Удалить после готовности проекта*/
-h1 {
-  border: 1px solid red;
-}
+/*h1 {*/
+/*  border: 1px solid red;*/
+/*}*/
 
 
 
@@ -120,6 +120,7 @@ h1 {
   display: flex;
   width: 80%;
   margin: 100px auto;
+  background-color: white;
 }
 
 .two-columns {
@@ -151,15 +152,11 @@ h1 {
 }
 
 .two-columns_paragraph {
-  border: 1px solid red;
-  flex-direction: column;
   padding: 0;
-  margin-bottom: 30px;
+  min-height: 30px;
 }
 
-.two-columns_paragraph__span-accent {
-  line-height: 34px;
-  font-size: 24px;
+.two-columns_paragraph_span-accent {
   font-weight: bold;
 }
 
