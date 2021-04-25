@@ -1,11 +1,24 @@
 /*Удалить после готовности проекта*/
-/*div {*/
-/*  border: 1px solid red;*/
-/*}*/
+div {
+  border: 1px solid red;
+}
+
 /*Удалить после готовности проекта*/
-/*h1 {*/
+section {
+  border: 1px solid red;
+}
+
+/*Удалить после готовности проекта*/
+/*p {*/
 /*  border: 1px solid red;*/
 /*}*/
+
+/*Удалить после готовности проекта*/
+h1 {
+  border: 1px solid red;
+}
+
+
 
 .page {
   min-width: 1100px;
@@ -101,6 +114,53 @@
   font-size: 18px;
   font-weight: normal;
   z-index: 2;
+}
+
+.description {
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.two-columns_brief {
+  width: 175px;
+  height: 100%;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin-top: 0;
+}
+
+.two-columns_main-text {
+  width: 80%;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns_paragraph {
+  border: 1px solid red;
+  flex-direction: column;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns_paragraph__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* и элемента с модификатором вида ключ-значение */
