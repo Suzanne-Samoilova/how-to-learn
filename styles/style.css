@@ -1,5 +1,5 @@
 /*Удалить после готовности проекта*/
-/*div, h1, h2, section {*/
+/*div, h1, h2, section, a {*/
 /*  border: 1px solid red;*/
 /*}*/
 
@@ -94,6 +94,10 @@
   z-index: 2;
 }
 
+.content {
+
+}
+
 .description {
   display: flex;
   width: 80%;
@@ -101,12 +105,14 @@
   background-color: white;
 }
 
+/*Вся таблица description*/
 .two-columns {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
+/*Левый столбец description*/
 .two-columns__brief {
   width: 175px;
   height: 100%;
@@ -117,6 +123,7 @@
   margin-top: 0;
 }
 
+/*Правый столбец description*/
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
@@ -129,9 +136,15 @@
   justify-content: space-between;
 }
 
+/*Блоки с текстом у правого столбца description*/
 .two-columns__paragraph {
   padding: 0;
   min-height: 30px;
+  margin-bottom: 30px;
+}
+/*Убрать отступ последнего блока с текстом description*/
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__paragraph_span-accent {
@@ -172,7 +185,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto 100px;
-
 }
 
 /*Карточка в таблице digits*/
@@ -206,6 +218,50 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+/*Весь блок Фейнман*/
+.feynman {
+  background-color: #f2f2f2;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/*Заголовок Фейнман*/
+.feynman__title {
+  width: 648px;
+  color: black;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px auto 70px;
+}
+
+/*Выучить и не забыть*/
+.feynman__subtitle {
+  color: black;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto auto;
+}
+
+/*Подробнее со стрелкой*/
+.feynman__link {
+  position: absolute;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  top: 50%;
+  right: 48px;
+}
+
+
 
 /*Расположение логотипа Яндекс Практикум в подвале*/
 .logo_place_footer {
