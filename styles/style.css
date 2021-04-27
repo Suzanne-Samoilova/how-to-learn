@@ -1,7 +1,7 @@
 /*Удалить после готовности проекта*/
-/*div, h1, h2, section, a {*/
-/*  border: 1px solid red;*/
-/*}*/
+div, h1, h2, section, a {
+  border: 1px solid red;
+}
 
 
 
@@ -322,6 +322,74 @@
   color: white;
 }
 
+.footer {
+  display: flex;
+  min-height: 350px;
+  background-color: #1f1f1f;
+}
+
+/*Вся таблица*/
+.footer__columns {
+  width: 90%;
+  margin: 60px auto 40px;
+}
+
+/*Общая часть двух больших блоков*/
+.footer__column {
+  flex-basis: 711px;
+}
+
+/*Два больших блока внутри таблицы*/
+.footer__column_content_copyright {
+
+}
+
+/*Первая карточка внутри большого второго блока*/
+.footer__column_content_info {
+
+}
+
+/*Вторая карточка внутри большого второго блока*/
+.footer__column_content_social {
+
+}
+
+/*Автор © &copy; */
+.footer__author {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*Заголовок карточки*/
+.footer__column_heading {
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Блок с тремя ссылками*/
+.footer__column_links {
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*Иконки ссылок*/
+.footer__social_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+/*Ссылки внтри footer__column_links*/
+.footer__column_link {
+
+}
 
 /*Логотип Яндекс Практикум в подвале*/
 .logo_place_footer {
