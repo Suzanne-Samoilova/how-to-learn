@@ -31,7 +31,7 @@ div, h1, h2, section, a {
   position: absolute;
   margin-left: 64px;
   width: 730px;
-  color: black;
+  color: #000000;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -85,7 +85,7 @@ div, h1, h2, section, a {
   left: 64px;
   bottom: 30px;
   width: 388px;
-  color: black;
+  color: #000000;
   text-align: left;
   line-height: 25px;
   font-size: 18px;
@@ -129,7 +129,7 @@ div, h1, h2, section, a {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  color: black;
+  color: #000000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -164,7 +164,7 @@ div, h1, h2, section, a {
   font-weight: bold;
   text-align: center;
   align-content: center;
-  color: black;
+  color: #000000;
 }
 
 /*digits h2*/
@@ -175,7 +175,7 @@ div, h1, h2, section, a {
   font-weight: normal;
   margin: 0 auto;
   text-align: center;
-  color: black;
+  color: #000000;
 }
 
 /*Вся таблица digits*/
@@ -199,7 +199,7 @@ div, h1, h2, section, a {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  color: black;
+  color: #000000;
 }
 
 /*Текст карточки в таблице digits*/
@@ -208,7 +208,7 @@ div, h1, h2, section, a {
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
-  color: black;
+  color: #000000;
 }
 
 /*Весь блок Фейнман*/
@@ -227,7 +227,7 @@ div, h1, h2, section, a {
 /*Заголовок Фейнман*/
 .feynman__title {
   width: 648px;
-  color: black;
+  color: #000000;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -237,7 +237,7 @@ div, h1, h2, section, a {
 
 /*Выучить и не забыть*/
 .feynman__subtitle {
-  color: black;
+  color: #000000;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -332,6 +332,8 @@ div, h1, h2, section, a {
 .footer__columns {
   width: 90%;
   margin: 60px auto 40px;
+  display: flex;
+  flex-direction: row;
 }
 
 /*Общая часть двух больших блоков*/
@@ -339,19 +341,34 @@ div, h1, h2, section, a {
   flex-basis: 711px;
 }
 
-/*Два больших блока внутри таблицы*/
+/*Левый большой блок внутри таблицы*/
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+/*Правый большой блок внутри таблицы*/
+.footer__column_content_copyright:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 
 }
 
 /*Первая карточка внутри большого второго блока*/
 .footer__column_content_info {
-
+  display: flex;
+  flex-direction: column;
 }
 
 /*Вторая карточка внутри большого второго блока*/
 .footer__column_content_social {
-
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Автор © &copy; */
@@ -361,6 +378,7 @@ div, h1, h2, section, a {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  color: white;
 }
 
 /*Заголовок карточки*/
@@ -369,10 +387,13 @@ div, h1, h2, section, a {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  color: white;
 }
 
 /*Блок с тремя ссылками*/
 .footer__column_links {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 16px;
   line-height: 30px;
   font-size: 18px;
@@ -388,11 +409,15 @@ div, h1, h2, section, a {
 
 /*Ссылки внтри footer__column_links*/
 .footer__column_link {
+  text-decoration: none;
+  color: white;
 
 }
 
 /*Логотип Яндекс Практикум в подвале*/
 .logo_place_footer {
+  border: 1px solid red;
+
   width: 183px;
   height: 35px;
 }
