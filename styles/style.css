@@ -21,7 +21,6 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   position: relative;
   align-items: center;
@@ -43,7 +42,6 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
-  z-index: 2;
 }
 
 /*Голубой квадрат*/
@@ -73,7 +71,7 @@
   height: 32px;
 }
 
-/*Расположение логотипа Яндекс Практикум в header*/
+/*Логотип Яндекс Практикум в header*/
 .logo_place_header {
   position: absolute;
   top: 30px;
@@ -143,6 +141,7 @@
   min-height: 30px;
   margin-bottom: 30px;
 }
+
 /*Убрать отступ последнего блока с текстом description*/
 .two-columns__paragraph:last-child {
   margin-bottom: 0;
@@ -264,69 +263,6 @@
   position: relative;
 }
 
-/*h1 kaufman*/
-.section-title_theme_dark {
-  border: 1px solid red;
-
-  color: white;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  margin: 90px auto 0;
-  z-index: 1;
-}
-
-
-/*h2 kaufman*/
-.section-subtitle_theme_dark {
-  border: 1px solid red;
-
-  color: white;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: 20px auto 0;
-  z-index: 1;
-
-}
-
-/*Вся таблица kaufman*/
-.table_theme_dark {
-  border: 1px solid red;
-  z-index: 1;
-
-}
-
-/* одна карточка в таблице kaufman*/
-.table__cell_theme_dark {
-  border: 1px solid red;
-
-  width: 200px;
-  margin-right: 0;
-  margin-top: 80px;
-  z-index: 1;
-}
-
-/*Название карточки kaufman*/
-.table__heading_theme_dark {
-  border: 1px solid red;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-
-/*Текст карточки kaufman*/
-.table__text_theme_dark {
-  border: 1px solid red;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-}
-
 /*Голубой треугольник*/
 .kaufman__triangle {
   position: absolute;
@@ -336,7 +272,58 @@
   height: 877px;
 }
 
-/*Расположение логотипа Яндекс Практикум в подвале*/
+/*h1 kaufman*/
+.section-title_theme_dark {
+  position: inherit;
+  color: white;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 90px auto 0;
+}
+
+
+/*h2 kaufman*/
+.section-subtitle_theme_dark {
+  position: inherit;
+  color: white;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 20px auto 0;
+}
+
+/*Вся таблица kaufman*/
+.table_theme_dark {
+  position: inherit;
+}
+
+/* одна карточка в таблице kaufman*/
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 80px;
+}
+
+/*Название в карточке kaufman*/
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/*Текст карточки kaufman*/
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+
+/*Логотип Яндекс Практикум в подвале*/
 .logo_place_footer {
   width: 183px;
   height: 35px;
