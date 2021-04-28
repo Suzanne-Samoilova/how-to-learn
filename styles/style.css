@@ -1,9 +1,8 @@
-/*Удалить после готовности проекта*/
-div, h1, h2, section, a {
-  border: 1px solid red;
+/*Все ссылки*/
+a:hover {
+  color: #2f80ed;
+  background: #1f1f1f;
 }
-
-
 
 .page {
   min-width: 1100px;
@@ -16,17 +15,31 @@ div, h1, h2, section, a {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*Изображение логотипа Яндекс Практикум*/
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+/*Логотип Яндекс Практикум header*/
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
 .header {
   display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #f2f2f2;
+  background: #f2f2f2;
   position: relative;
   align-items: center;
 }
 
-/*Текст Научиться учиться*/
+/*Текст h1 Научиться учиться*/
 .header__title {
   position: absolute;
   margin-left: 64px;
@@ -51,7 +64,7 @@ div, h1, h2, section, a {
   right: 0;
   height: 568px;
   width: 568px;
-  background-color: #2f80ed;
+  background: #2f80ed;
   z-index: 0;
 }
 
@@ -63,20 +76,6 @@ div, h1, h2, section, a {
   width: 756px;
   height: 608px;
   z-index: 1;
-}
-
-/*Изображение логотипа Яндекс Практикум*/
-.logo {
-  width: 183px;
-  height: 32px;
-}
-
-/*Логотип Яндекс Практикум в header*/
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  z-index: 2;
 }
 
 /*Текст внизу header*/
@@ -101,7 +100,7 @@ div, h1, h2, section, a {
   display: flex;
   width: 80%;
   margin: 100px auto 0;
-  background-color: white;
+  background: #ffffff;
 }
 
 /*Вся таблица description*/
@@ -152,7 +151,7 @@ div, h1, h2, section, a {
 }
 
 .digits {
-
+  background: #ffffff;
 }
 
 /*digits h1 Цифры и факты*/
@@ -275,7 +274,7 @@ div, h1, h2, section, a {
 /*h1 kaufman*/
 .section-title_theme_dark {
   position: inherit;
-  color: white;
+  color: #ffffff;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -283,11 +282,10 @@ div, h1, h2, section, a {
   margin: 90px auto 0;
 }
 
-
 /*h2 kaufman*/
 .section-subtitle_theme_dark {
   position: inherit;
-  color: white;
+  color: #ffffff;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -300,7 +298,7 @@ div, h1, h2, section, a {
   position: inherit;
 }
 
-/* одна карточка в таблице kaufman*/
+/*Одна карточка в таблице kaufman*/
 .table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
@@ -311,7 +309,7 @@ div, h1, h2, section, a {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 
 /*Текст карточки kaufman*/
@@ -319,7 +317,7 @@ div, h1, h2, section, a {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color: white;
+  color: #ffffff;
 }
 
 .footer {
@@ -328,66 +326,46 @@ div, h1, h2, section, a {
   background-color: #1f1f1f;
 }
 
-/*Вся таблица*/
+/*Вся таблица footer*/
 .footer__columns {
   width: 90%;
   margin: 60px auto 40px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-/*Общая часть двух больших блоков*/
+/*Общая часть трех столбцов*/
 .footer__column {
-  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
 }
 
-/*Левый большой блок внутри таблицы*/
+/*Левый блок внутри таблицы*/
 .footer__column_content_copyright {
-  display: flex;
-  flex-direction: column;
+  flex-basis: 711px;
   justify-content: space-between;
-
+  align-items: flex-start;
 }
 
-/*Правый большой блок внутри таблицы*/
-.footer__column_content_copyright:last-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-
-}
-
-/*Первая карточка внутри большого второго блока*/
+/*Средний блок*/
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
+
 }
 
-/*Вторая карточка внутри большого второго блока*/
+/*Правый блок*/
 .footer__column_content_social {
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-}
 
-/*Автор © &copy; */
-.footer__author {
-  margin-top: 18px;
-  margin-bottom: 18px;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
 }
 
 /*Заголовок карточки*/
 .footer__column_heading {
   margin-bottom: 20px;
+  margin-top: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
 }
 
 /*Блок с тремя ссылками*/
@@ -410,14 +388,20 @@ div, h1, h2, section, a {
 /*Ссылки внтри footer__column_links*/
 .footer__column_link {
   text-decoration: none;
-  color: white;
-
+  color: #ffffff;
 }
 
-/*Логотип Яндекс Практикум в подвале*/
-.logo_place_footer {
-  border: 1px solid red;
+/*Автор © &copy; */
+.footer__author {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
 
-  width: 183px;
+/*Логотип Яндекс Практикум подвал*/
+.logo_place_footer {
   height: 35px;
 }
