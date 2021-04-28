@@ -1,9 +1,3 @@
-/*Подсветка всех ссылок*/
-a:hover {
-  color: #2f80ed;
-  background: #1f1f1f;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -41,8 +35,9 @@ a:hover {
 
 /*Текст h1 Научиться учиться*/
 .header__title {
-  position: absolute;
   margin-left: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 730px;
   color: #000000;
   line-height: 96px;
@@ -55,6 +50,11 @@ a:hover {
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+}
+
+.header__link:hover {
+  color: #2f80ed;
+  background: #1f1f1f;
 }
 
 /*Голубой квадрат*/
@@ -80,6 +80,8 @@ a:hover {
 /*Текст внизу header*/
 .header__subtitle {
   position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
   left: 64px;
   bottom: 30px;
   width: 388px;
@@ -97,13 +99,13 @@ a:hover {
 
 .description {
   display: flex;
-  width: 80%;
-  margin: 100px auto 0;
   background: #ffffff;
 }
 
 /*Вся таблица description*/
 .two-columns {
+  width: 80%;
+  margin: 100px auto 0;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -118,6 +120,7 @@ a:hover {
   font-weight: normal;
   color: #2f80ed;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*Правый столбец description*/
@@ -136,7 +139,6 @@ a:hover {
 /*Блоки с текстом у правого столбца description*/
 .two-columns__paragraph {
   padding: 0;
-  min-height: 30px;
   margin-bottom: 30px;
   margin-top: 0;
 }
@@ -221,13 +223,14 @@ a:hover {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 867px 637px;
-  height: 790px;
+  min-height: 790px;
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 100px;
 }
 
-/*h2 Заголовок Фейнман*/
+/*Заголовок Фейнман*/
 .feynman__title {
   width: 648px;
   color: #000000;
@@ -235,10 +238,10 @@ a:hover {
   font-size: 120px;
   font-weight: bold;
   text-align: center;
-  margin: 100px auto 70px;
+  margin: 0 auto 70px;
 }
 
-/*h3 Выучить и не забыть*/
+/*Выучить и не забыть*/
 .feynman__subtitle {
   color: #000000;
   line-height: 51px;
@@ -260,6 +263,11 @@ a:hover {
   right: 48px;
 }
 
+.feynman__link:hover {
+  color: #2f80ed;
+  background: #1f1f1f;
+}
+
 .kaufman {
   background-color: #1f1f1f;
   overflow: hidden;
@@ -276,25 +284,17 @@ a:hover {
   height: 877px;
 }
 
-/*h2 kaufman*/
+/*Заголовок kaufman*/
 .section-title_theme_dark {
   position: inherit;
   color: #ffffff;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
   margin: 90px auto 0;
 }
 
-/*h3 kaufman*/
+/*Подзаголовок kaufman*/
 .section-subtitle_theme_dark {
   position: inherit;
   color: #ffffff;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   margin: 20px auto 0;
 }
 
@@ -312,17 +312,11 @@ a:hover {
 
 /*Название в карточке kaufman*/
 .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
   color: #ffffff;
 }
 
 /*Текст карточки kaufman*/
 .table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   color: #ffffff;
 }
 
@@ -356,18 +350,16 @@ a:hover {
 
 /*Средний блок*/
 .footer__column_content_info {
-  border: red solid 1px;
 
 }
 
 /*Правый блок*/
 .footer__column_content_social {
-  border: red solid 1px;
 
 }
 
 /*Заголовок карточки*/
-.footer__column_heading {
+.footer__column-heading {
   margin-bottom: 20px;
   margin-top: 0;
   line-height: 30px;
@@ -378,7 +370,6 @@ a:hover {
 
 /*Блок с тремя ссылками*/
 .footer__column-links {
-  border: red solid 1px;
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
@@ -386,10 +377,12 @@ a:hover {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 /*Иконки ссылок*/
-.footer__social_icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -397,14 +390,13 @@ a:hover {
 
 /*Ссылки внтри footer__column-links*/
 .footer__column-link {
-  border: red solid 1px;
   text-decoration: none;
   color: #ffffff;
 }
 
-.footer-li {
-  border: yellow solid 1px;
-  list-style-type: none;
+.footer__column-link:hover {
+  color: #2f80ed;
+  background: #1f1f1f;
 }
 
 /*Автор © &copy; */
