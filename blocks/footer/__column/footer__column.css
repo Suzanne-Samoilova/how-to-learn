@@ -1,0 +1,5 @@
+/*Общая часть трех столбцов*/
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}

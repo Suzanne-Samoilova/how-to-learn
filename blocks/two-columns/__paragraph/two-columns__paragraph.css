@@ -1,0 +1,11 @@
+/*Блоки с текстом у правого столбца description*/
+.two-columns__paragraph {
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+/*Убрать отступ последнего блока с текстом description*/
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}

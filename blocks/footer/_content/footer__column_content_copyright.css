@@ -1,0 +1,6 @@
+/*Левый блок внутри таблицы*/
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+  align-items: flex-start;
+}

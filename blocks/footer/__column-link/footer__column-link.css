@@ -1,0 +1,10 @@
+/*Ссылки внтри footer__column-links*/
+.footer__column-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__column-link:hover {
+  color: #2f80ed;
+  background: #1f1f1f;
+}

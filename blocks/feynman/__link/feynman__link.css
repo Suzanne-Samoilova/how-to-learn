@@ -1,0 +1,16 @@
+/*Подробнее со стрелкой*/
+.feynman__link {
+  position: absolute;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  top: 50%;
+  right: 48px;
+}
+
+.feynman__link:hover {
+  color: #2f80ed;
+  background: #1f1f1f;
+}

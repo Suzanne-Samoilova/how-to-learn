@@ -1,0 +1,9 @@
+/*Заголовок карточки в таблице digits*/
+.table__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
