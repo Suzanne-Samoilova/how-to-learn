@@ -1,0 +1,11 @@
+/*Таблица с карточками*/
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  }
