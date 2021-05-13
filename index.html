@@ -15,7 +15,7 @@
     <!--      Мальчик-->
     <img src="./images/header-image.png" alt="Изображение" class="header__main-illustration">
     <!--    Голубой квадрат-->
-    <div class="header__square-pic"></div>
+    <div class="header__square-pic rotation"></div>
   </header>
 <!--  Секция content-->
   <main class="content">
@@ -67,12 +67,12 @@
       <h2 class="section-title">Видео на TED</h2>
       <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
       <div class="video__iframes">
-        <iframe class="video__iframe" type="text/html" width="720" height="405"
+        <iframe class="video__iframe"
                   src="https://www.youtube.com/embed/5MgBikgcWnY"
-                  frameborder="0" allowfullscreen>Видео</iframe>
-        <iframe class="video__iframe" type="text/html" width="720" height="405"
+                  allowfullscreen></iframe>
+        <iframe class="video__iframe"
                   src="https://www.youtube.com/embed/arj7oStGLkU"
-                  frameborder="0" allowfullscreen>Видео</iframe>
+                  allowfullscreen></iframe>
       </div>
     </section>
 <!--    Секция oakley-->
@@ -136,7 +136,7 @@
       <div class="khan__container">
         <p class="khan__author">Салман Хан</p>
         <h2 class="khan__title">Весь мир - школа</h2>
-        <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу &#171;Весь мир — школа&#187; нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+        <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу &#171;Весь мир — школа&#187; нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
         <p class="khan__quote-author">Джордж Лукас</p>
         <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
         <div class="khan__book-container">
@@ -147,7 +147,7 @@
     </section>
 <!--    Секция kaufman-->
     <section class="kaufman">
-      <div class="kaufman__triangle"></div>
+      <div class="kaufman__triangle rotation"></div>
       <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
       <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
       <ul class="table table_theme_dark">
@@ -193,19 +193,19 @@
         </li>
       </ul>
     </section>
-  </main>
 <!--  Секция resources-->
   <section class="resources">
     <h2 class="section-title">Полезные ресурсы</h2>
     <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-    <div class="resources__logo-zone">
-      <a href="https://arzamas.academy/" target="_blank"><img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Логотип"></a>
-      <a href="https://nplus1.ru/" target="_blank"><img class="resources__logo" src="images/logo/resources-n1.svg" alt="Логотип"></a>
-      <a href="https://strelka.com/ru" target="_blank"><img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Логотип"></a>
-      <a href="https://polka.academy/" target="_blank"><img class="resources__logo" src="images/logo/resources-polka.svg" alt="Логотип"></a>
-    </div>
+    <ul class="resources__logo-zone">
+      <li><a href="https://arzamas.academy/" target="_blank"><img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Логотип"></a></li>
+      <li><a href="https://nplus1.ru/" target="_blank"><img class="resources__logo" src="images/logo/resources-n1.svg" alt="Логотип"></a></li>
+      <li><a href="https://strelka.com/ru" target="_blank"><img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Логотип"></a></li>
+      <li><a href="https://polka.academy/" target="_blank"><img class="resources__logo" src="images/logo/resources-polka.svg" alt="Логотип"></a></li>
+    </ul>
   </section>
-      <!--  Секция footer-->
+  </main>
+  <!--  Секция footer-->
   <footer class="footer">
     <div class="footer__columns">
       <div class="footer__column footer__column_content_copyright">
@@ -213,7 +213,7 @@
         <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
       </div>
       <nav class="footer__column footer__column_content_info">
-        <h2 class="footer__column-heading">О Практикуме</h2>
+        <h4 class="footer__column-heading">О Практикуме</h4>
         <ul class="footer__column-links">
           <li><a href="https://praktikum.yandex.ru/" target="_blank" class="footer__column-link">Главная</a></li>
           <li><a href="#" target="_blank" class="footer__column-link">Концепция</a></li>
@@ -221,7 +221,7 @@
         </ul>
       </nav>
       <nav class="footer__column footer__column_content_social">
-        <h2 class="footer__column-heading">Соцсети</h2>
+        <h4 class="footer__column-heading">Соцсети</h4>
         <ul class="footer__column-links">
           <li><a href="https://www.facebook.com/" target="_blank" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Логотип" class="footer__social-icon">Facebook</a></li>
           <li><a href="https://vk.com/" target="_blank" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="Логотип" class="footer__social-icon">ВКонтакте</a></li>
