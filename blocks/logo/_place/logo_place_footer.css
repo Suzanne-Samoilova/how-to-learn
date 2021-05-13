@@ -1,9 +1,9 @@
 /*Логотип Яндекс Практикум подвал*/
 .logo_place_footer {
   height: 35px;
+  transition: opacity 0.3s linear;
 }
 
 .logo_place_footer:hover {
   opacity: 0.4;
-  transition: opacity 500ms linear;
 }

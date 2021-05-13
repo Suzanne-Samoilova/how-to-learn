@@ -8,9 +8,9 @@
   text-decoration: none;
   top: 50%;
   right: 48px;
+  transition: opacity 0.3s linear;
 }
 
 .feynman__link:hover {
   opacity: 0.4;
-  transition: opacity 500ms linear;
 }
