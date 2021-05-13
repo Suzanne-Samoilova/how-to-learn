@@ -5,6 +5,6 @@
 }
 
 .header__link:hover {
-  color: #2f80ed;
-  background: #1f1f1f;
+  opacity: 0.4;
+  transition: opacity 1s linear;
 }
